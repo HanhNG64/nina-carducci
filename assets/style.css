@@ -1,11 +1,18 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+body {
+	max-width: 1920px;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+ }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -72,8 +79,10 @@ body {
 
 }
 #about-me {
-	flex: 2
+	flex: 2;
+	text-align: justify;
 }
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -84,15 +93,13 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px;
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -106,7 +113,8 @@ body {
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;

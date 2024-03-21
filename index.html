@@ -11,6 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
 	<!-- Open Graph Meta Tags -->
 	<meta property="og:type" content="website" />
@@ -67,21 +69,22 @@
 </head>
 
 <body>
-	<header>
-		<div class="top-header">
-			<h1 class="name">Nina Carducci</h1>
-			<div class="nav">   
-				<ul>
-					<li><a href="#about">À propos</a></li>
-					<li><a href="#gallery">Galerie</a></li>
-					<li><a href="#services">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-						<img src="assets/images/instagram-min.webp" width="20" height="20" alt="Logo Instagram" ></a>
-					</li>
-				</ul>
-			</div>
+	<header class="top-header">
+		<h1 class="name">Nina Carducci</h1>
+		<div class="nav">   
+			<ul>
+				<li><a href="#about">À propos</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+				<li><a href="#services">Service</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+					<img src="assets/images/instagram-min.webp" width="20" height="20" alt="Logo Instagram" ></a>
+				</li>
+			</ul>
 		</div>
+	</header>
+
+	<main>	
 		<div id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -96,7 +99,7 @@
 						./assets/images/slider/1025/ryoji-iwata-min.webp 1025w,
 						./assets/images/slider/768/ryoji-iwata-min.webp 768w,
 						./assets/images/slider/320/ryoji-iwata-min.webp 320w"
-						width="1920" height="888" style="max-width: 100%; height: auto;" sizes="100vw"
+						width="1920" height="888" sizes="100vw"
 						class="d-block w-100" alt="Homme en costume sur le passage piéton">
 					</div>
 					<div class="carousel-item">
@@ -105,7 +108,7 @@
 						./assets/images/slider/1025/nicholas-green-min.webp 1025w,
 						./assets/images/slider/768/nicholas-green-min.webp 768w,
 						./assets/images/slider/320/nicholas-green-min.webp 320w"
-						width="1920" height="888" style="max-width: 100%; height: auto;" sizes="100vw"
+						width="1920" height="888" sizes="100vw"
 						class="d-block w-100" alt="Groupe de personnes dans un concert">
 					</div>
 					<div class="carousel-item">
@@ -114,7 +117,7 @@
 						./assets/images/slider/1025/edward-cisneros-min.webp 1025w,
 						./assets/images/slider/768/edward-cisneros-min.webp 768w,
 						./assets/images/slider/320/edward-cisneros-min.webp 320w"
-						width="1920" height="888" style="max-width: 100%; height: auto;" sizes="100vw"
+						width="1920" height="888" sizes="100vw"
 						class="d-block w-100" alt="Danse des mariés">
 					</div>
 				</div>
@@ -128,13 +131,10 @@
 				</button>
 			</div>
 		</div>
-	</header>
-
-	<main>	
 		<div id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina-min.webp" width="470" height="469"  
-				style="max-width: 100%; height: auto;" alt="Portrait de la photographe Nina Carducci">
+				 alt="Portrait de la photographe Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -154,7 +154,7 @@
 					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-min.webp" width="440" height="440" alt="Portrait d'un homme éblouit par le soleil"/>
 					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-min.webp" width="440" height="440" alt="Les mariés se promenant sous les palmiers"/>
 					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-min.webp"width="440" height="440"  alt="Portrait d'une femme portant des grosses lunettes"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-min.webp" width="440" height="440" alt="Chanteur dans la fumée"/>
+					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neil-min.webp" width="440" height="440" alt="Chanteur dans la fumée"/>
 					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-min.webp" width="440" height="440" alt="Femme heureuse dans son travail"/>
 				</div>
 			</div>
@@ -230,7 +230,7 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera-min.webp" width="448" height="447"  style="max-width: 100%; height: auto;" alt="Appareil photo">
+					<img src="./assets/images/camera-min.webp" width="448" height="447" alt="Appareil photo">
 				</div>
 			</div>
 		</div>

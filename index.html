@@ -18,6 +18,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
+		<link rel="preload" href="./assets/images/slider/1920/ryoji-iwata-min.webp" as="image" media="screen and (min-width: 1920px)">
+		<link rel="preload" href="./assets/images/slider/1440/ryoji-iwata-min.webp" as="image" media="screen and (min-width: 1440px) and (max-width: 1919px)">
+		<link rel="preload" href="./assets/images/slider/1025/ryoji-iwata-min.webp" as="image" media="screen and (min-width: 1025px) and (max-width: 1439px)">
+		<!-- <link rel="preload" href="./assets/images/slider/768/ryoji-iwata-min.webp" as="image" media="screen and (min-width: 768px) and (max-width: 1024px)"> -->
+
 		<!-- Open Graph Meta Tags -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://nina-carducci-xi.vercel.app/" />
@@ -76,7 +81,7 @@
 	<body>
 		<header class="top-header">
 			<h1 class="name">Nina Carducci</h1>
-			<div class="nav">   
+			<nav>   
 				<ul>
 					<li><a href="#about">À propos</a></li>
 					<li><a href="#gallery">Galerie</a></li>
@@ -86,7 +91,7 @@
 						<img src="assets/images/instagram-min.webp" width="20" height="20" alt="Logo Instagram" ></a>
 					</li>
 				</ul>
-			</div>
+			<nav>
 		</header>
 
 		<main>	
@@ -98,13 +103,14 @@
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+							<div class="carousel-item active">
 							<img src="./assets/images/slider/1920/ryoji-iwata-min.webp" 
 							srcset="./assets/images/slider/1440/ryoji-iwata-min.webp 1440w,
 							./assets/images/slider/1025/ryoji-iwata-min.webp 1025w,
 							./assets/images/slider/768/ryoji-iwata-min.webp 768w,
 							./assets/images/slider/320/ryoji-iwata-min.webp 320w"
 							width="1920" height="888" sizes="100vw"
+							sizes="(max-width: 1440px) 100vw, (max-width: 1025px) 100vw, (max-width: 768px) 100vw, (max-width: 320px) 100vw"
 							class="d-block w-100" alt="Homme en costume sur le passage piéton">
 						</div>
 						<div class="carousel-item">
@@ -114,7 +120,8 @@
 							./assets/images/slider/768/nicholas-green-min.webp 768w,
 							./assets/images/slider/320/nicholas-green-min.webp 320w"
 							width="1920" height="888" sizes="100vw"
-							class="d-block w-100" alt="Groupe de personnes dans un concert">
+							sizes="(max-width: 1440px) 100vw, (max-width: 1025px) 100vw, (max-width: 768px) 100vw, (max-width: 320px) 100vw"
+							class="d-block w-100" alt="Groupe de personnes dans un concert" loading="lazy">
 						</div>
 						<div class="carousel-item">
 							<img src="./assets/images/slider/1920/edward-cisneros-min.webp" 
@@ -123,7 +130,8 @@
 							./assets/images/slider/768/edward-cisneros-min.webp 768w,
 							./assets/images/slider/320/edward-cisneros-min.webp 320w"
 							width="1920" height="888" sizes="100vw"
-							class="d-block w-100" alt="Danse des mariés">
+							sizes="(max-width: 1440px) 100vw, (max-width: 1025px) 100vw, (max-width: 768px) 100vw, (max-width: 320px) 100vw"
+							class="d-block w-100" alt="Danse des mariés" loading="lazy">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
